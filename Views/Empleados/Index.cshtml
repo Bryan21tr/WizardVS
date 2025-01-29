@@ -1,0 +1,71 @@
+@model IEnumerable<WizardVS.Models.Empleado>
+@{
+    ViewBag.Title = "Personal";
+}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+@{
+    ViewBag.Title = "Inicio";
+}
+
+<p class="form-horizontal">
+    <a asp-action="Create"><button type="button" class="btn btn-info">Crear</button></a>
+</p>
+<table class="table table-hover table-dark">
+    <thead  class="thead-dark">
+        <tr>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Nombres)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Apellidos)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.Domicilio)
+            </th>
+            <th scope="col">
+                @Html.DisplayNameFor(model => model.FechaIngreso)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombres)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellidos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Domicilio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaIngreso)
+            </td>
+            <td>
+                <a asp-action="Editar" asp-route-id="@item.id_empleado"><button type="button" class="btn btn-info"> Editar </button></a>
+                <a asp-action="Eliminar" asp-route-id="@item.id_empleado"><button type="button" class="btn btn-danger"> Eliminar</button></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

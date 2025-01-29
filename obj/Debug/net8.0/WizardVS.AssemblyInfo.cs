@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WizardVS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b283cb2a00638b687e34eec79892b0f0c4ff6ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("WizardVS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WizardVS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

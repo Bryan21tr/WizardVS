@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0040E7AC-19FA-4FD7-8C23-3D4A341ACCFE}|WizardVS.csproj|c:\\users\\elhernandez\\source\\repos\\wizardvs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0040E7AC-19FA-4FD7-8C23-3D4A341ACCFE}|WizardVS.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{0040E7AC-19FA-4FD7-8C23-3D4A341ACCFE}|WizardVS.csproj|c:\\users\\elhernandez\\source\\repos\\wizardvs\\controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0040E7AC-19FA-4FD7-8C23-3D4A341ACCFE}|WizardVS.csproj|solutionrelative:controllers\\empleadoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0040E7AC-19FA-4FD7-8C23-3D4A341ACCFE}|WizardVS.csproj|c:\\users\\elhernandez\\source\\repos\\wizardvs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0040E7AC-19FA-4FD7-8C23-3D4A341ACCFE}|WizardVS.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0040E7AC-19FA-4FD7-8C23-3D4A341ACCFE}|WizardVS.csproj|c:\\users\\elhernandez\\source\\repos\\wizardvs\\views\\empleados\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0040E7AC-19FA-4FD7-8C23-3D4A341ACCFE}|WizardVS.csproj|solutionrelative:views\\empleados\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0040E7AC-19FA-4FD7-8C23-3D4A341ACCFE}|WizardVS.csproj|c:\\users\\elhernandez\\source\\repos\\wizardvs\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0040E7AC-19FA-4FD7-8C23-3D4A341ACCFE}|WizardVS.csproj|solutionrelative:controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0040E7AC-19FA-4FD7-8C23-3D4A341ACCFE}|WizardVS.csproj|c:\\users\\elhernandez\\source\\repos\\wizardvs\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0040E7AC-19FA-4FD7-8C23-3D4A341ACCFE}|WizardVS.csproj|solutionrelative:models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0040E7AC-19FA-4FD7-8C23-3D4A341ACCFE}|WizardVS.csproj|c:\\users\\elhernandez\\source\\repos\\wizardvs\\models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0040E7AC-19FA-4FD7-8C23-3D4A341ACCFE}|WizardVS.csproj|solutionrelative:models\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0040E7AC-19FA-4FD7-8C23-3D4A341ACCFE}|WizardVS.csproj|c:\\users\\elhernandez\\source\\repos\\wizardvs\\views\\empleados\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0040E7AC-19FA-4FD7-8C23-3D4A341ACCFE}|WizardVS.csproj|solutionrelative:views\\empleados\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,67 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductoesController.cs",
-              "DocumentMoniker": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\Controllers\\ProductoesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductoesController.cs",
-              "ToolTip": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\Controllers\\ProductoesController.cs",
-              "RelativeToolTip": "Controllers\\ProductoesController.cs",
-              "ViewState": "AgIAAFEAAAAAAAAAAADwv2IAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T16:26:33.947Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\Models\\Producto.cs",
-              "RelativeDocumentMoniker": "Models\\Producto.cs",
-              "ToolTip": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\Models\\Producto.cs",
-              "RelativeToolTip": "Models\\Producto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T21:45:39.384Z"
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\Views\\Empleados\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Empleados\\Index.cshtml",
+              "ToolTip": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\Views\\Empleados\\Index.cshtml",
+              "RelativeToolTip": "Views\\Empleados\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-29T02:27:57.194Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T21:34:46.84Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\Models\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Models\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\Models\\AppDbContext.cs",
-              "RelativeToolTip": "Models\\AppDbContext.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA4AAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T21:32:17.148Z"
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\Views\\Empleados\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Empleados\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\Views\\Empleados\\Editar.cshtml",
+              "RelativeToolTip": "Views\\Empleados\\Editar.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-28T22:30:20.456Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABoAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-26T21:18:29.464Z",
+              "Title": "EmpleadosController.cs",
+              "DocumentMoniker": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\Controllers\\EmpleadosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmpleadosController.cs",
+              "ToolTip": "C:\\Users\\elhernandez\\source\\repos\\WizardVS\\Controllers\\EmpleadosController.cs",
+              "RelativeToolTip": "Controllers\\EmpleadosController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAqwGoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-28T22:30:09.746Z",
               "EditorCaption": ""
             }
           ]

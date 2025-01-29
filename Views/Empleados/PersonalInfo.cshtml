@@ -2,33 +2,39 @@
 @{
     ViewBag.Title = "Personal Info";
 }
-<h2>Personal info</h2>
+<h2>Personal</h2>
+@if (ViewData["Error"] != null)
+{
+    <div class="alert alert-danger">
+        @ViewData["Error"]
+    </div>
+}
 @using (Html.BeginForm("PersonalInfo", "Empleados", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
 <div class="form-horizontal">
-    <h4>PASO 1: Infomación personal del empleado</h4>
+    <h4>PASO 1: Registro personal del empleado</h4>
     <hr />
-    @Html.ValidationSummary(true)
+    @Html.ValidationSummary(true, "", new { @class = "alert alert-danger" })
     <div class="form-group">
-        @Html.LabelFor(model => model.Nombres, new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.Nombres,"Nombre del Empleado" ,new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.TextBoxFor(model => model.Nombres)
-            @Html.ValidationMessageFor(model => model.Nombres)
+            @Html.TextBoxFor(model => model.Nombres,new { @class = "form-control", placeholder = "Ingresa el nombre del Empleado", required = "required" })
+            @Html.ValidationMessageFor(model => model.Nombres, "", new { @class = "text-danger" })
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(model => model.Apellidos, new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.Apellidos,"Apellidos del Empleado" ,new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.TextBoxFor(model => model.Apellidos)
-            @Html.ValidationMessageFor(model => model.Apellidos)
+            @Html.TextBoxFor(model => model.Apellidos,new { @class = "form-control", placeholder = "Ingresa el Apellido del Empleado", required = "required" })
+            @Html.ValidationMessageFor(model => model.Apellidos, "", new { @class = "text-danger" })
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(model => model.Domicilio, new { @class = "control-label col-md-2" })
+        @Html.LabelFor(model => model.Domicilio,"Domicilio del Empleado" , new { @class = "control-label col-md-2" })
         <div class="col-md-10">
-            @Html.TextBoxFor(model => model.Domicilio)
-            @Html.ValidationMessageFor(model => model.Domicilio)
+            @Html.TextBoxFor(model => model.Domicilio,new { @class = "form-control", placeholder = "Ingresa el Domicilio del Empleado", required = "required"} )
+            @Html.ValidationMessageFor(model => model.Domicilio, "", new { @class = "text-danger" })
         </div>
     </div>
  

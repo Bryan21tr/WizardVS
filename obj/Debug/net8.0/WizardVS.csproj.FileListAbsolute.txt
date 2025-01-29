@@ -262,3 +262,4 @@ C:\Users\elhernandez\source\repos\WizardVS\bin\Debug\net8.0\runtimes\win\lib\net
 C:\Users\elhernandez\source\repos\WizardVS\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\elhernandez\source\repos\WizardVS\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\elhernandez\source\repos\WizardVS\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+c:\Users\elhernandez\source\repos\WizardVS\obj\Debug\net8.0\WizardVS.sourcelink.json

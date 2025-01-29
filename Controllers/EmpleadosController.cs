@@ -17,8 +17,11 @@ namespace WizardVS.Controllers
     {
         this.context = context;
     }
- 
-    public ActionResult Index()
+    public async Task<IActionResult> Index()
+        {
+            return View(await context.Empleados.ToListAsync());
+        }
+    public ActionResult Create()
     {
         return View("PersonalInfo");
     }
@@ -71,18 +74,112 @@ namespace WizardVS.Controllers
         {
             
                 empleado.Departamento = laboral.Departamento;
-                empleado.FechaIngreso = laboral.FechaIngreso;
+                empleado.FechaIngreso = laboral.FechaIngreso.ToUniversalTime();
                 empleado.Salario = laboral.Salario;
                  
                 context.Empleados.Add(empleado);
                 context.SaveChanges();
                 RemoveEmpleado();
  
-                return View("Completado");
+                return View("Index");
         }
         if (BtnCancel != null)
             RemoveEmpleado();
         return View();
     }
+        public async Task<IActionResult> Eliminar(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var empleado = await context.Empleados
+                .FirstOrDefaultAsync(m => m.id_empleado == id);
+            if (empleado == null)
+            {
+                return NotFound();
+            }
+
+            return View(empleado);
+        }
+
+        // POST: Productoes/Delete/5
+        [HttpPost, ActionName("Eliminar")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var empleado = await context.Empleados.FindAsync(id);
+            if (empleado != null)
+            {
+                context.Empleados.Remove(empleado);
+            }
+
+            await context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+        public async Task<IActionResult> Editar(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var empleado = await context.Empleados.FindAsync(id);
+            if (empleado == null)
+            {
+                return NotFound();
+            }
+            return View(empleado);
+        }
+
+        // POST: Productoes/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Editar(int id, [Bind("id_empleado,Nombres,Apellidos,Domicilio,Departamento,FechaIngreso,Salario")] Empleado empleado)
+        {
+            if (id != empleado.id_empleado)
+            {
+                return View("Index");
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                var data = await context.Empleados.FindAsync(id);
+         
+            data.Nombres = empleado.Nombres;
+            data.Apellidos = empleado.Apellidos;
+            data.Domicilio = empleado.Domicilio;
+                data.Departamento = empleado.Departamento;
+                data.FechaIngreso = empleado.FechaIngreso.ToUniversalTime();
+                data.Salario = empleado.Salario;
+                 
+        
+                    context.Empleados.Update(data);
+                    await context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!EmpleadoExists(empleado.id_empleado))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View("Index");
+        }
+        private bool EmpleadoExists(int id)
+        {
+            return context.Empleados.Any(e => e.id_empleado == id);
+        }
 }
 }
